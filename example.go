@@ -4,6 +4,7 @@ import "fmt"
 //stack
 func main(){
 
+
 	//stack
 	stack := make([]int,0)
 	//push
@@ -48,4 +49,10 @@ func main(){
 	s :="12345"
 	m:=s[0]-'1'
 	fmt.Printf("%v",m)
+	stack := make([]int,0)
+	stack = append(stack, 10)
+	v := stack[len(stack)-1]
+	stack = stack[:len(stack)-1]
+	fmt.Printf("test")
+	fmt.Println(v)
 }
